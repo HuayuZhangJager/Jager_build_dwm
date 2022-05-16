@@ -1,7 +1,8 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=DWM
-Comment=Dynamic window manager
-Exec=/usr/local/bin/dwm
-Icon=dwm
+Comment=Log in using the Dynamic Window Manager
+Exec=/home/kali/script/startdwm.sh
+Icon=/usr/local/bin/dwm.png
+TryExec=/home/kali/script/startdwm.sh
 Type=XSession
