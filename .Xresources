@@ -1,0 +1,9 @@
+! this is the ~/.Xresources
+! the display_manager will load automatically but the startx need config in .xinitrc file (use "xrdb -query -all" to check)
+Xft.dpi: 96
+Xft.autohint: 0
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb

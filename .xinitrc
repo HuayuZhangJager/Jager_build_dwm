@@ -1,3 +1,4 @@
+xrdb -merge -I$HOME ~/.Xresources
 xcompmgr &
 slstatus &
 feh --bg-scale /usr/share/wallpapers/KaliLayers/contents/images/3840x2160.png &
