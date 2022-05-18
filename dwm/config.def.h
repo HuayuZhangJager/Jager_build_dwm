@@ -62,6 +62,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
 static const char *termcmd[]  = { "st", NULL };
 static const char *printscreen[] = { "/home/kali/script/screenshot", NULL};
+static const char *firefoxcmd[] = { "firefox", NULL};
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
@@ -69,6 +70,7 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY|ShiftMask,             XK_p,	 spawn,          {.v = printscreen } },  // screenshot using scrot (script)
+	{ MODKEY|ShiftMask,             XK_f,	 spawn,          {.v = firefoxcmd } },  // quick start firefox
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
